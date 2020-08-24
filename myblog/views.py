@@ -13,6 +13,7 @@ class IndexView(ListView):
 	model = Post
 	template_name = 'myblog/index.html'
 	#ordering = ['-id']
+	ordering = ['-post_date']
 
 class ArticleDetailView(DetailView):
 	model = Post
